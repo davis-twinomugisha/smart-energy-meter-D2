@@ -1,0 +1,21 @@
+{
+  "recorded_before_model_fitting": true,
+  "seed": 20261106,
+  "task": "Predict energy consumed during the next complete hour in kWh",
+  "primary_research_question": "Can a compact model prepared for edge deployment reduce next-hour energy forecast error against a 24-hour mean baseline and support conditional depletion warnings when starting balance is known?",
+  "hypothesis": "Selected ML model reduces held-out next-hour MAE by at least 10 percent relative to the 24-hour mean baseline; this is a predeclared practical target, not an assumed result.",
+  "raw_source": "UCI Individual Household Electric Power Consumption, DOI 10.24432/C58K54",
+  "source_country": "France",
+  "households": 1,
+  "hourly_coverage_required": 60,
+  "lookback_complete_hours": 24,
+  "split": "First 70 percent of hourly timeline train, next 15 percent validation, final 15 percent test. No shuffle. Label hours do not overlap.",
+  "selection": "Select configuration and model family using validation MAE only; refit the winner on train plus validation, then evaluate frozen models on the held-out test.",
+  "baselines": ["mean_24h", "persistence", "same_hour_yesterday"],
+  "decision_tree_grid": {"max_depth":[3,5,7,9],"min_samples_leaf":[12,48]},
+  "random_forest_grid": {"n_estimators":[16,32],"max_depth":[6,8],"min_samples_leaf":[12]},
+  "metrics": ["MAE_kWh","RMSE_kWh","R2","WAPE_percent"],
+  "secondary_scenarios": {"balances_kwh":[2,5,10,20],"horizon_hours":24,"warning_horizon_hours":6,"origin_spacing_hours":24,"topups":false,"labels":"Assigned starting balances combined with measured held-out consumption. These are constructed scenarios, not observed prepaid meter depletion events.","within_hour_assumption":"Uniform consumption in the exhaustion hour"},
+  "device_targets_to_be_measured": {"inference_ms":100,"model_storage_kb":100},
+  "not_claimed": ["Ugandan household validation","actual Yaka integration","measured ESP32 latency or RAM","wireless radio validation","electrical power consumption","working connected sensing node"]
+}

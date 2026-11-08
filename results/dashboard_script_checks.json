@@ -1,0 +1,11 @@
+{
+  "javascript_execution": "passed",
+  "example_loading": "passed",
+  "api_forecast": "passed",
+  "comparison_rows": "passed",
+  "horizon_censoring": "passed",
+  "zero_balance": "passed",
+  "invalid_history": "passed",
+  "environment": "Node VM with minimal mocked DOM/canvas and real local HTTP API",
+  "real_browser_rendering": "not performed; browser binary unavailable"
+}

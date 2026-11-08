@@ -1,0 +1,26 @@
+test_bad_json_and_content_type (test_http.HTTPIntegration.test_bad_json_and_content_type) ... ok
+test_body_limit_and_unknown_routes (test_http.HTTPIntegration.test_body_limit_and_unknown_routes) ... ok
+test_dashboard_and_status (test_http.HTTPIntegration.test_dashboard_and_status) ... ok
+test_nonfinite_values_are_rejected (test_http.HTTPIntegration.test_nonfinite_values_are_rejected) ... ok
+test_real_request_predicts (test_http.HTTPIntegration.test_real_request_predicts) ... ok
+test_telemetry_requires_provenance (test_http.HTTPIntegration.test_telemetry_requires_provenance) ... ok
+test_features_use_only_previous_hours (test_software.DatasetAndModels.test_features_use_only_previous_hours) ... ok
+test_incomplete_hour_is_never_imputed (test_software.DatasetAndModels.test_incomplete_hour_is_never_imputed) ... ok
+test_source_country_is_explicit (test_software.DatasetAndModels.test_source_country_is_explicit) ... ok
+test_stored_test_predictions_match_frozen_model (test_software.DatasetAndModels.test_stored_test_predictions_match_frozen_model) ... ok
+test_time_splits_are_ordered (test_software.DatasetAndModels.test_time_splits_are_ordered) ... ok
+test_baselines (test_software.FeaturesAndBalance.test_baselines) ... ok
+test_exhaustion_interpolation (test_software.FeaturesAndBalance.test_exhaustion_interpolation) ... ok
+test_feature_order_and_units (test_software.FeaturesAndBalance.test_feature_order_and_units) ... ok
+test_hour_alignment (test_software.FeaturesAndBalance.test_hour_alignment) ... ok
+test_insufficient_or_invalid_history (test_software.FeaturesAndBalance.test_insufficient_or_invalid_history) ... ok
+test_invalid_balances (test_software.FeaturesAndBalance.test_invalid_balances) ... ok
+test_recursive_forecast_has_no_future_readings (test_software.FeaturesAndBalance.test_recursive_forecast_has_no_future_readings) ... ok
+test_example_forecast_and_conditional_balance (test_software.PredictionAPI.test_example_forecast_and_conditional_balance) ... ok
+test_invalid_payloads (test_software.PredictionAPI.test_invalid_payloads) ... ok
+test_missing_balance_is_unavailable_not_zero (test_software.PredictionAPI.test_missing_balance_is_unavailable_not_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 2.135s
+
+OK

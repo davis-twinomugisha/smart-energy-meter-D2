@@ -1,0 +1,73 @@
+{
+  "scenario_type": "Assigned starting balances on held-out measured consumption, no observed prepaid balances or top-ups",
+  "horizon_hours": 24,
+  "warning_horizon_hours": 6,
+  "origins": 193,
+  "methods": [
+    {
+      "method": "mean_24h",
+      "scenarios": 772,
+      "origins": 193,
+      "actual_depletion_within_24h": 696,
+      "predicted_depletion_within_24h": 694,
+      "missed_24h_depletion": 23,
+      "false_24h_depletion": 21,
+      "common_uncensored_scenarios": 553,
+      "MAE_hours_common_subset": 1.9560574253506142,
+      "warning_TP": 298,
+      "warning_FP": 27,
+      "warning_FN": 71,
+      "warning_precision": 0.916923076923077,
+      "warning_recall": 0.8075880758807588
+    },
+    {
+      "method": "persistence",
+      "scenarios": 772,
+      "origins": 193,
+      "actual_depletion_within_24h": 696,
+      "predicted_depletion_within_24h": 582,
+      "missed_24h_depletion": 136,
+      "false_24h_depletion": 22,
+      "common_uncensored_scenarios": 553,
+      "MAE_hours_common_subset": 4.183481837518361,
+      "warning_TP": 228,
+      "warning_FP": 18,
+      "warning_FN": 141,
+      "warning_precision": 0.926829268292683,
+      "warning_recall": 0.6178861788617886
+    },
+    {
+      "method": "same_hour_yesterday",
+      "scenarios": 772,
+      "origins": 193,
+      "actual_depletion_within_24h": 696,
+      "predicted_depletion_within_24h": 694,
+      "missed_24h_depletion": 23,
+      "false_24h_depletion": 21,
+      "common_uncensored_scenarios": 553,
+      "MAE_hours_common_subset": 2.1318221611257298,
+      "warning_TP": 319,
+      "warning_FP": 48,
+      "warning_FN": 50,
+      "warning_precision": 0.8692098092643051,
+      "warning_recall": 0.8644986449864499
+    },
+    {
+      "method": "selected_ml",
+      "scenarios": 772,
+      "origins": 193,
+      "actual_depletion_within_24h": 696,
+      "predicted_depletion_within_24h": 751,
+      "missed_24h_depletion": 1,
+      "false_24h_depletion": 56,
+      "common_uncensored_scenarios": 553,
+      "MAE_hours_common_subset": 2.0095879079479833,
+      "warning_TP": 342,
+      "warning_FP": 77,
+      "warning_FN": 27,
+      "warning_precision": 0.8162291169451074,
+      "warning_recall": 0.926829268292683
+    }
+  ],
+  "limitations": "Hours MAE uses common uncensored subset only. Coverage/miss counts accompany it. Repeated balances share the same origin and are not independent household events."
+}

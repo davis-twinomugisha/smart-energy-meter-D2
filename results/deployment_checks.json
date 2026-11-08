@@ -1,0 +1,40 @@
+{
+  "trees": 32,
+  "nodes": 13024,
+  "constant_array_payload_bytes": 169312,
+  "header_source_bytes": 721078,
+  "constant_payload_note": "Sum of constant array element sizes. Target-board compiled flash and RAM have not been measured.",
+  "compact_tree_alternative": {
+    "trees": 1,
+    "nodes": 249,
+    "constant_array_payload_bytes": 3237,
+    "header_source_bytes": 14438,
+    "constant_payload_note": "Sum of constant array element sizes. Target-board compiled flash and RAM have not been measured.",
+    "host_parity_rows": 32449,
+    "max_absolute_prediction_difference_kwh": 1.8062471607294128e-07
+  },
+  "host_compiler_command": [
+    "g++",
+    "-std=c++17",
+    "-O2",
+    "-shared",
+    "-fPIC",
+    "/workspace/scratch/70396ea95ad0/energy_d2/deployment/host_wrapper.cpp",
+    "-o",
+    "/workspace/scratch/70396ea95ad0/energy_d2/deployment/host_model.so"
+  ],
+  "host_parity_rows": 32449,
+  "max_absolute_prediction_difference_kwh": 1.7079886927007237e-07,
+  "combined_feature_tests": 150,
+  "max_feature_difference": 0.0,
+  "max_combined_prediction_difference_kwh": 1.196525216684563e-07,
+  "host_benchmark_protocol": "12 batches of 100000 calls cycling all feature rows; includes loop/index overhead; host only",
+  "host_batch_average_inference_us_median": 1.2137238049999999,
+  "host_batch_average_inference_us_min": 1.1557552599999998,
+  "host_batch_average_inference_us_max": 1.2947485300000001,
+  "board_compilation": "not performed; no ESP32 toolchain or connected board",
+  "board_inference_ms": null,
+  "board_flash_bytes": null,
+  "board_ram_bytes": null,
+  "electrical_energy_per_inference": null
+}

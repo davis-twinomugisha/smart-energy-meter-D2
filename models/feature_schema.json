@@ -1,0 +1,24 @@
+{
+  "feature_names": [
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_6",
+    "lag_12",
+    "lag_24",
+    "mean_3",
+    "mean_6",
+    "mean_24",
+    "std_24",
+    "hour_sin",
+    "hour_cos",
+    "weekday_sin",
+    "weekday_cos",
+    "weekend"
+  ],
+  "history_hours": 24,
+  "target": "next full hour energy, kWh",
+  "feature_dtype": "float32",
+  "scaler": null,
+  "missing_history_policy": "reject until 24 consecutive complete valid hours are available"
+}

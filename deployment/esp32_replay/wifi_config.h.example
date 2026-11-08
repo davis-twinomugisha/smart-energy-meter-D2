@@ -1,0 +1,4 @@
+#pragma once
+const char* WIFI_SSID = "YOUR_NETWORK_NAME";
+const char* WIFI_PASSWORD = "YOUR_NETWORK_PASSWORD";
+const char* SERVER_URL = "http://YOUR_COMPUTER_LAN_IP:8765/api/telemetry";

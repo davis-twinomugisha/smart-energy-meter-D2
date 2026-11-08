@@ -1,0 +1,198 @@
+{
+  "software_tests_run": 21,
+  "failures": 0,
+  "errors": 0,
+  "http_transport": "Host loopback TCP/HTTP; no physical wireless link",
+  "http_requests": 20,
+  "successful_requests": 20,
+  "host_loopback_roundtrip_ms_median": 38.30386,
+  "host_loopback_roundtrip_ms_p95": 42.35373705000001,
+  "request_body_bytes_min": 533,
+  "request_body_bytes_max": 548,
+  "max_C_host_difference_kwh": 2.7340576691514684e-08,
+  "board_inference_tested": false,
+  "sensor_connected": false,
+  "physical_wireless_tested": false,
+  "requests": [
+    {
+      "sequence": 1,
+      "status": 200,
+      "request_body_bytes": 545,
+      "response_body_bytes": 2486,
+      "roundtrip_ms": 31.560385,
+      "host_recursive_forecast_ms": 29.586823,
+      "c_host_next_hour_difference_kwh": 2.7340576691514684e-08
+    },
+    {
+      "sequence": 2,
+      "status": 200,
+      "request_body_bytes": 533,
+      "response_body_bytes": 2664,
+      "roundtrip_ms": 28.525301,
+      "host_recursive_forecast_ms": 26.859118,
+      "c_host_next_hour_difference_kwh": 1.5503321237897438e-08
+    },
+    {
+      "sequence": 3,
+      "status": 200,
+      "request_body_bytes": 548,
+      "response_body_bytes": 2618,
+      "roundtrip_ms": 40.463319,
+      "host_recursive_forecast_ms": 38.838328,
+      "c_host_next_hour_difference_kwh": 2.000707644000954e-08
+    },
+    {
+      "sequence": 4,
+      "status": 200,
+      "request_body_bytes": 545,
+      "response_body_bytes": 2486,
+      "roundtrip_ms": 32.965194,
+      "host_recursive_forecast_ms": 30.384405,
+      "c_host_next_hour_difference_kwh": 2.7340576691514684e-08
+    },
+    {
+      "sequence": 5,
+      "status": 200,
+      "request_body_bytes": 533,
+      "response_body_bytes": 2664,
+      "roundtrip_ms": 36.714429,
+      "host_recursive_forecast_ms": 35.260346,
+      "c_host_next_hour_difference_kwh": 1.5503321237897438e-08
+    },
+    {
+      "sequence": 6,
+      "status": 200,
+      "request_body_bytes": 548,
+      "response_body_bytes": 2618,
+      "roundtrip_ms": 36.892999,
+      "host_recursive_forecast_ms": 34.813767,
+      "c_host_next_hour_difference_kwh": 2.000707644000954e-08
+    },
+    {
+      "sequence": 7,
+      "status": 200,
+      "request_body_bytes": 545,
+      "response_body_bytes": 2486,
+      "roundtrip_ms": 39.056463,
+      "host_recursive_forecast_ms": 37.312677,
+      "c_host_next_hour_difference_kwh": 2.7340576691514684e-08
+    },
+    {
+      "sequence": 8,
+      "status": 200,
+      "request_body_bytes": 533,
+      "response_body_bytes": 2664,
+      "roundtrip_ms": 36.707639,
+      "host_recursive_forecast_ms": 34.840858,
+      "c_host_next_hour_difference_kwh": 1.5503321237897438e-08
+    },
+    {
+      "sequence": 9,
+      "status": 200,
+      "request_body_bytes": 548,
+      "response_body_bytes": 2618,
+      "roundtrip_ms": 41.087201,
+      "host_recursive_forecast_ms": 38.922931,
+      "c_host_next_hour_difference_kwh": 2.000707644000954e-08
+    },
+    {
+      "sequence": 10,
+      "status": 200,
+      "request_body_bytes": 545,
+      "response_body_bytes": 2486,
+      "roundtrip_ms": 39.477157,
+      "host_recursive_forecast_ms": 37.536014,
+      "c_host_next_hour_difference_kwh": 2.7340576691514684e-08
+    },
+    {
+      "sequence": 11,
+      "status": 200,
+      "request_body_bytes": 533,
+      "response_body_bytes": 2664,
+      "roundtrip_ms": 37.551257,
+      "host_recursive_forecast_ms": 35.685242,
+      "c_host_next_hour_difference_kwh": 1.5503321237897438e-08
+    },
+    {
+      "sequence": 12,
+      "status": 200,
+      "request_body_bytes": 548,
+      "response_body_bytes": 2618,
+      "roundtrip_ms": 36.363104,
+      "host_recursive_forecast_ms": 34.230553,
+      "c_host_next_hour_difference_kwh": 2.000707644000954e-08
+    },
+    {
+      "sequence": 13,
+      "status": 200,
+      "request_body_bytes": 545,
+      "response_body_bytes": 2486,
+      "roundtrip_ms": 42.080283,
+      "host_recursive_forecast_ms": 40.202296,
+      "c_host_next_hour_difference_kwh": 2.7340576691514684e-08
+    },
+    {
+      "sequence": 14,
+      "status": 200,
+      "request_body_bytes": 533,
+      "response_body_bytes": 2664,
+      "roundtrip_ms": 40.891822,
+      "host_recursive_forecast_ms": 38.764318,
+      "c_host_next_hour_difference_kwh": 1.5503321237897438e-08
+    },
+    {
+      "sequence": 15,
+      "status": 200,
+      "request_body_bytes": 548,
+      "response_body_bytes": 2618,
+      "roundtrip_ms": 40.671073,
+      "host_recursive_forecast_ms": 38.840421,
+      "c_host_next_hour_difference_kwh": 2.000707644000954e-08
+    },
+    {
+      "sequence": 16,
+      "status": 200,
+      "request_body_bytes": 545,
+      "response_body_bytes": 2485,
+      "roundtrip_ms": 41.465221,
+      "host_recursive_forecast_ms": 39.49566,
+      "c_host_next_hour_difference_kwh": 2.7340576691514684e-08
+    },
+    {
+      "sequence": 17,
+      "status": 200,
+      "request_body_bytes": 533,
+      "response_body_bytes": 2664,
+      "roundtrip_ms": 47.549364,
+      "host_recursive_forecast_ms": 45.500959,
+      "c_host_next_hour_difference_kwh": 1.5503321237897438e-08
+    },
+    {
+      "sequence": 18,
+      "status": 200,
+      "request_body_bytes": 548,
+      "response_body_bytes": 2618,
+      "roundtrip_ms": 40.968963,
+      "host_recursive_forecast_ms": 39.351623,
+      "c_host_next_hour_difference_kwh": 2.000707644000954e-08
+    },
+    {
+      "sequence": 19,
+      "status": 200,
+      "request_body_bytes": 545,
+      "response_body_bytes": 2486,
+      "roundtrip_ms": 34.708744,
+      "host_recursive_forecast_ms": 32.777015,
+      "c_host_next_hour_difference_kwh": 2.7340576691514684e-08
+    },
+    {
+      "sequence": 20,
+      "status": 200,
+      "request_body_bytes": 533,
+      "response_body_bytes": 2664,
+      "roundtrip_ms": 37.486559,
+      "host_recursive_forecast_ms": 35.990242,
+      "c_host_next_hour_difference_kwh": 1.5503321237897438e-08
+    }
+  ]
+}

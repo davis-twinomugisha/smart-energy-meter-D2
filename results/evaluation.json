@@ -1,0 +1,74 @@
+{
+  "selected_family": "random_forest",
+  "selected_configuration": "forest_n32_d8",
+  "test_rows": 4805,
+  "test_metrics": [
+    {
+      "method": "mean_24h",
+      "MAE_kWh": 0.5344317658110764,
+      "RMSE_kWh": 0.6829946904170145,
+      "R2": 0.08368291393856209,
+      "WAPE_percent": 55.99172490869181,
+      "selected_ml": false
+    },
+    {
+      "method": "persistence",
+      "MAE_kWh": 0.3886728130419701,
+      "RMSE_kWh": 0.5876753457381362,
+      "R2": 0.3215996353589793,
+      "WAPE_percent": 40.72074794114409,
+      "selected_ml": false
+    },
+    {
+      "method": "same_hour_yesterday",
+      "MAE_kWh": 0.507793201526188,
+      "RMSE_kWh": 0.7583883356966016,
+      "R2": -0.12978139664263066,
+      "WAPE_percent": 53.20083698095355,
+      "selected_ml": false
+    },
+    {
+      "method": "decision_tree",
+      "MAE_kWh": 0.3450635311843995,
+      "RMSE_kWh": 0.5004129715298561,
+      "R2": 0.5081097126182603,
+      "WAPE_percent": 36.15185988201276,
+      "selected_ml": false
+    },
+    {
+      "method": "random_forest",
+      "MAE_kWh": 0.329421902668734,
+      "RMSE_kWh": 0.47582645758975706,
+      "R2": 0.5552578379766306,
+      "WAPE_percent": 34.513106692175825,
+      "selected_ml": true
+    }
+  ],
+  "validation_baseline_metrics": {
+    "mean_24h": {
+      "MAE_kWh": 0.710389145600221,
+      "RMSE_kWh": 0.877555633920839,
+      "R2": 0.015238754136215782,
+      "WAPE_percent": 57.14830084942596
+    },
+    "persistence": {
+      "MAE_kWh": 0.46144862550075977,
+      "RMSE_kWh": 0.686416771879521,
+      "R2": 0.39749950975543447,
+      "WAPE_percent": 37.12191415085623
+    },
+    "same_hour_yesterday": {
+      "MAE_kWh": 0.6594598356126536,
+      "RMSE_kWh": 0.9493335902672256,
+      "R2": -0.15244266263248707,
+      "WAPE_percent": 53.051217515242946
+    }
+  },
+  "primary_MAE_improvement_percent": 38.36034387499604,
+  "daily_block_bootstrap_95pct_interval_percent": [
+    36.169679990617496,
+    40.59171130295946
+  ],
+  "predeclared_10pct_target_met": true,
+  "generalization_scope": "Held-out future hours from the same French household, not independent Ugandan households."
+}
